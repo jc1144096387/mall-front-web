@@ -19,9 +19,12 @@ const routes = [
   //   // 路由懒加载
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // },
-
   {
     path: '/', // 首页
+    redirect: '/index'
+  },
+  {
+    path: '/index', // 首页
     name: 'index',
     component: () => import('@/views/index.vue')
   },
